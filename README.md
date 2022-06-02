@@ -1,2 +1,2 @@
-https://github.com/AndreyDodonov/rsschool-cv
+https://andreydodonov.github.io/rsschool-cv/cv
 
