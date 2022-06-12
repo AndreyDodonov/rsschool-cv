@@ -42,7 +42,46 @@
         </section>
         <section>
             <h2>Code</h2>
-            <p>Here will be code example</p>
+            <p>Code example frome Codewars</p>
+            <pre>
+                function toCamelCase(str){
+                    let newStr = "";
+                    if(str){
+                      let wordArr = str.split(/[-_]/g);
+                      for (let i in wordArr){
+                        if(i > 0){
+                          newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
+                        }else{
+                          newStr += wordArr[i]
+                        }
+                      }
+                    } else {
+                      return newStr
+                    }
+                    return newStr;
+                  }
+                </pre>
+        </section>
+        <section>
+            <h2>Language</h2>
+            <ul>
+                <li>English - A2</li>
+                <li>Russian - Native</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>MISiS - technology of machinebuilding</li>
+                <li>RS School</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contacts</h2>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li>Moscow, Russia</li>
+            </ul>
         </section>
     </main>
 
