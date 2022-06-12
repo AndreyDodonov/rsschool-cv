@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,98 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    CV will be here...
-    Coming soon )
+    <header>
+        <div class="header_wrap">
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li><a class="header_item" href="#">About Me</a></li>
+                    <li><a class="header_item" href="#">Skills</a></li>
+                    <li><a class="header_item" href="#">Projects</a></li>
+                    <li><a class="header_item" href="#">Code</a></li>
+                    <li><a class="header_item" href="#">Language</a></li>
+                    <li><a class="header_item" href="#">Education</a></li>
+                    <li><a class="header_item" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Frontend Developer</h1>
+        <section>
+            <h2>About me</h2>
+            <p>Something about me</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>Something about my skills</p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <p>Here will be my projects</p>
+        </section>
+        <section>
+            <h2>Code</h2>
+            <p>Code example frome Codewars</p>
+            <pre>
+                function toCamelCase(str){
+                    let newStr = "";
+                    if(str){
+                      let wordArr = str.split(/[-_]/g);
+                      for (let i in wordArr){
+                        if(i > 0){
+                          newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
+                        }else{
+                          newStr += wordArr[i]
+                        }
+                      }
+                    } else {
+                      return newStr
+                    }
+                    return newStr;
+                  }
+                </pre>
+        </section>
+        <section>
+            <h2>Language</h2>
+            <ul>
+                <li>English - A2</li>
+                <li>Russian - Native</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>MISiS - technology of machinebuilding</li>
+                <li>RS School</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contacts</h2>
+            <ul>
+                <li><a href="#">Telegram</a></li>
+                <li>Moscow, Russia</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <div class="footer_copyright">
+                <p>(c) Dodonov Andrew 2022</p>
+            </div>
+            <div class="footer_links">
+                <a href="#">Github</a>
+                <a href="#">Telegram</a>
+            </div>
+            <div class="footer_logo">
+                <p>RSSCHOOL logo</p>
+            </div>
+        </div>
+        
+    </footer>
 </body>
+
 </html>
