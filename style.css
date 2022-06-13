@@ -44,7 +44,7 @@ body {
 }
 
 .about_me {
-    height: 50vh;
+    min-height: 50vh;
     margin: 0 auto;
     color: #fff;
     background-color: #039be5;
@@ -55,7 +55,7 @@ body {
 }
 
 .skills_section {
-    height: 50vh;
+    min-height: 50vh;
     margin: 0 auto;
     color: #fff;
     background-color: #99A8C0;
@@ -65,32 +65,32 @@ body {
 .projects_section {
     background-color: #4fc3f7;
     padding: 10px;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .code_section {
-    background-color: #5d4037;
+    background-color: #212121;
     color: #fff;
     padding: 10px;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .language_section {
     background-color: #f57f17;
     padding: 10px;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .education_section {
     background-color: #43a047;
     padding: 10px;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .contacts_section {
     background-color: #9e9d24;
     padding: 10px;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 /* FOOTER */

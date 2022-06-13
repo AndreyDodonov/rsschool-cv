@@ -18,13 +18,13 @@
             <div class="header_wrap">
                 <nav class="header_nav">
                     <ul class="header_list">
-                        <li><a class="header_item" href="#">About Me</a></li>
-                        <li><a class="header_item" href="#">Skills</a></li>
-                        <li><a class="header_item" href="#">Projects</a></li>
-                        <li><a class="header_item" href="#">Code</a></li>
-                        <li><a class="header_item" href="#">Language</a></li>
-                        <li><a class="header_item" href="#">Education</a></li>
-                        <li><a class="header_item" href="#">Contact</a></li>
+                        <li><a class="header_item" href="#aboutMe">About Me</a></li>
+                        <li><a class="header_item" href="#skills">Skills</a></li>
+                        <li><a class="header_item" href="#projects">Projects</a></li>
+                        <li><a class="header_item" href="#code">Code</a></li>
+                        <li><a class="header_item" href="#language">Language</a></li>
+                        <li><a class="header_item" href="#education">Education</a></li>
+                        <li><a class="header_item" href="#contacts">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,7 +32,7 @@
     
         <main>
             <h1 class="main_header">Frontend Developer</h1>
-            <section class="about_me">
+            <section id="aboutMe" class="about_me">
                 <h2>About me</h2>
                 <div class="aboutme_wrap">
                     <p>Hi! My name is Andrew and I'm junior frontend developer. At this time I'm working at position process ingeneer, but I want to be a frontend developer.</p>
@@ -40,7 +40,7 @@
                 </div>
                 
             </section>
-            <section class="skills_section">
+            <section id="skills" class="skills_section">
                 <h2>Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -50,7 +50,7 @@
                     <li>SCSS</li>
                 </ul>
             </section>
-            <section class="projects_section">
+            <section id="projects" class="projects_section">
                 <h2>Projects</h2>               
                 <p>List of my projects</p>
                 <ul>
@@ -59,46 +59,46 @@
                     <li><a href="https://github.com/AndreyDodonov/PERN_online_shop">PERN online shop</a></li>
                 </ul>
             </section>
-            <section class="code_section">
+            <section id="code" class="code_section">
                 <h2>Code</h2>
                 <p>Code example from Codewars</p>
                 <code>
-                    <pre>
-                        function toCamelCase(str){
-                            let newStr = "";
-                            if(str){
-                              let wordArr = str.split(/[-_]/g);
-                              for (let i in wordArr){
-                                if(i > 0){
-                                  newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
-                                }else{
-                                  newStr += wordArr[i]
-                                }
-                              }
-                            } else {
-                              return newStr
-                            }
-                            return newStr;
-                          }
-                        </pre>
+    <pre>
+        function toCamelCase(str){
+            let newStr = "";
+            if(str){
+              let wordArr = str.split(/[-_]/g);
+              for (let i in wordArr){
+                if(i > 0){
+                  newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
+                }else{
+                  newStr += wordArr[i]
+                }
+              }
+            } else {
+              return newStr
+            }
+            return newStr;
+          }
+        </pre>
                 </code>
 
             </section>
-            <section class="language_section">
+            <section id="language" class="language_section">
                 <h2>Language</h2>
                 <ul>
                     <li>English - A2</li>
                     <li>Russian - Native</li>
                 </ul>
             </section>
-            <section class="education_section">
+            <section id="education" class="education_section">
                 <h2>Education</h2>
                 <ul>
                     <li>MISiS - technology of machinebuilding</li>
                     <li>RS School</li>
                 </ul>
             </section>
-            <section class="contacts_section">
+            <section id="contacts" class="contacts_section">
                 <h2>Contacts</h2>
                 <ul>
                     <li><a href="#">Telegram</a></li>
