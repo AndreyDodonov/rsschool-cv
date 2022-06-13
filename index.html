@@ -1,105 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>CV Dodonov</title>
 </head>
 
 <body>
-    <header>
-        <div class="header_wrap">
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li><a class="header_item" href="#">About Me</a></li>
-                    <li><a class="header_item" href="#">Skills</a></li>
-                    <li><a class="header_item" href="#">Projects</a></li>
-                    <li><a class="header_item" href="#">Code</a></li>
-                    <li><a class="header_item" href="#">Language</a></li>
-                    <li><a class="header_item" href="#">Education</a></li>
-                    <li><a class="header_item" href="#">Contact</a></li>
+    <div class="container">
+        <header>
+            <div class="header_wrap">
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li><a class="header_item" href="#">About Me</a></li>
+                        <li><a class="header_item" href="#">Skills</a></li>
+                        <li><a class="header_item" href="#">Projects</a></li>
+                        <li><a class="header_item" href="#">Code</a></li>
+                        <li><a class="header_item" href="#">Language</a></li>
+                        <li><a class="header_item" href="#">Education</a></li>
+                        <li><a class="header_item" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <h1 class="main_header">Frontend Developer</h1>
+            <section class="about_me">
+                <h2>About me</h2>
+                <div class="aboutme_wrap">
+                    <p>Hi! My name is Andrew and I'm junior frontend developer. At this time I'm working at position process ingeneer, but I want to be a frontend developer.</p>
+                <img class="main_image" src="./img/photo_for_CV.jpg" alt="me photo">
+                </div>
+                
+            </section>
+            <section class="skills_section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (basic)</li>
+                    <li>React (basic)</li>
+                    <li>SCSS</li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </section>
+            <section class="projects_section">
+                <h2>Projects</h2>               
+                <p>List of my projects</p>
+                <ul>
+                    <li><a href="https://guessnumber2020.herokuapp.com/">GuessNumber</a></li>
+                    <li><a href="https://github.com/AndreyDodonov/react-table">React table</a></li>
+                    <li><a href="https://github.com/AndreyDodonov/PERN_online_shop">PERN online shop</a></li>
+                </ul>
+            </section>
+            <section class="code_section">
+                <h2>Code</h2>
+                <p>Code example from Codewars</p>
+                <code>
+                    <pre>
+                        function toCamelCase(str){
+                            let newStr = "";
+                            if(str){
+                              let wordArr = str.split(/[-_]/g);
+                              for (let i in wordArr){
+                                if(i > 0){
+                                  newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
+                                }else{
+                                  newStr += wordArr[i]
+                                }
+                              }
+                            } else {
+                              return newStr
+                            }
+                            return newStr;
+                          }
+                        </pre>
+                </code>
 
-    <main>
-        <h1>Frontend Developer</h1>
-        <section>
-            <h2>About me</h2>
-            <p>Something about me</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>Something about my skills</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Here will be my projects</p>
-        </section>
-        <section>
-            <h2>Code</h2>
-            <p>Code example frome Codewars</p>
-            <pre>
-                function toCamelCase(str){
-                    let newStr = "";
-                    if(str){
-                      let wordArr = str.split(/[-_]/g);
-                      for (let i in wordArr){
-                        if(i > 0){
-                          newStr += wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
-                        }else{
-                          newStr += wordArr[i]
-                        }
-                      }
-                    } else {
-                      return newStr
-                    }
-                    return newStr;
-                  }
-                </pre>
-        </section>
-        <section>
-            <h2>Language</h2>
-            <ul>
-                <li>English - A2</li>
-                <li>Russian - Native</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>MISiS - technology of machinebuilding</li>
-                <li>RS School</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contacts</h2>
-            <ul>
-                <li><a href="#">Telegram</a></li>
-                <li>Moscow, Russia</li>
-            </ul>
-        </section>
-    </main>
+            </section>
+            <section class="language_section">
+                <h2>Language</h2>
+                <ul>
+                    <li>English - A2</li>
+                    <li>Russian - Native</li>
+                </ul>
+            </section>
+            <section class="education_section">
+                <h2>Education</h2>
+                <ul>
+                    <li>MISiS - technology of machinebuilding</li>
+                    <li>RS School</li>
+                </ul>
+            </section>
+            <section class="contacts_section">
+                <h2>Contacts</h2>
+                <ul>
+                    <li><a href="#">Telegram</a></li>
+                    <li>Moscow, Russia</li>
+                </ul>
+            </section>
+        </main>
+    
+        <footer>
+            <div class="footer_wrap">
+                <div class="footer_copyright">
+                    <p>(c) Dodonov Andrew 2022</p>
+                </div>
+                <div class="footer_links">
+                    <a href="#"><img class="footer_links__image" src="./img/github.png" alt="my github"></a>
+                    <a href="#"><img class="footer_links__image" src="./img/telegram.png" alt="my telegram"></a>
+                </div>
+                <div class="footer_logo">
+                    <a href="https://rs.school/js/" target="_blank"><img class="footer_logo__image" src="./img/rs_school_js.svg" alt="rsschool logo"></a>                    
+                </div>
+            </div>
+            
+        </footer>
+    </div>
 
-    <footer>
-        <div class="footer_wrap">
-            <div class="footer_copyright">
-                <p>(c) Dodonov Andrew 2022</p>
-            </div>
-            <div class="footer_links">
-                <a href="#">Github</a>
-                <a href="#">Telegram</a>
-            </div>
-            <div class="footer_logo">
-                <p>RSSCHOOL logo</p>
-            </div>
-        </div>
-        
-    </footer>
 </body>
 
 </html>

@@ -1,5 +1,11 @@
 body {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 /* HEADER */
 .header_wrap {
@@ -26,10 +32,71 @@ body {
 
 /* main */
 
+.main_header {
+    text-align: center;
+}
+
+.main_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: black solid 3px;
+}
+
+.about_me {
+    height: 50vh;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #039be5;
+    padding: 10px;
+}
+.aboutme_wrap {    
+    display: flex;
+}
+
+.skills_section {
+    height: 50vh;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #99A8C0;
+    padding: 10px;
+}
+
+.projects_section {
+    background-color: #4fc3f7;
+    padding: 10px;
+    height: 50vh;
+}
+
+.code_section {
+    background-color: #5d4037;
+    color: #fff;
+    padding: 10px;
+    height: 50vh;
+}
+
+.language_section {
+    background-color: #f57f17;
+    padding: 10px;
+    height: 50vh;
+}
+
+.education_section {
+    background-color: #43a047;
+    padding: 10px;
+    height: 50vh;
+}
+
+.contacts_section {
+    background-color: #9e9d24;
+    padding: 10px;
+    height: 50vh;
+}
+
 /* FOOTER */
 
 .footer_wrap {
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,3 +104,45 @@ body {
     align-items: center;
     border-top: 1px gray solid;
 }
+
+.footer_links__image {
+    width: 50px;
+    height: 50px;
+}
+
+.footer_logo__image {
+    width: 100px;
+    height: 100px;
+}
+
+.footer_links__image:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.footer_logo__image:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
