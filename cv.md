@@ -44,7 +44,7 @@ no commercial experience in frontend development.
 #### Education:
 - MISIS - technology of machine building
 - some courses
-- RS School at this time
+- RS School stage 0 - done
 
 ***
 
